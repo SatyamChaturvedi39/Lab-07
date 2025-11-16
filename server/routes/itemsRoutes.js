@@ -1,9 +1,9 @@
 import express from "express";
-import * as controller from "../controllers/itemsController.js";
+import { getItems, getItemById, getRoot } from "../controllers/itemsController";
 const router = express.Router();
 
-router.get("/", controller.getRoot);
-router.get("/items", controller.getItems);
-router.get("/items/:id", controller.getItemById);
+router.get("/", getRoot);
+router.get("/items", getItems);
+router.get("/items/:id", getItemById);
 
 export default router;
