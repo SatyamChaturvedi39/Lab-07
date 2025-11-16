@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.selected { background-color:#e0f7ff; border:1px solid #06b6d4; }
